@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+    <title> Lobotomy </title>
+</head>
+
+<body>
+    <div class="CenterTop">
+    <h1 id="Paragraph1">Start Lobotomy</h1>
+    <button class="btn" type="button" onclick="ClickFunction()">
+            <strong>COMMENCE</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+        </div>
+    
+    <div id="DIVbutt" style="display: none">
+        <br>
+        <br>
+        <button type="button" class="btn2" onclick="FirstButt()">
+                <strong>1</strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+              <button type="button" class="btn2" onclick="SecondButt()">
+                    <strong>2</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>
+                  <button type="button" class="btn2" onclick="ThirdButt()">
+                        <strong>3</strong>
+                        <div id="container-stars">
+                          <div id="stars"></div>
+                        </div>
+                      
+                        <div id="glow">
+                          <div class="circle"></div>
+                          <div class="circle"></div>
+                        </div>
+                      </button>
+        
+        <table style="margin-left:auto; margin-right:auto;">
+                <tr>
+                    <td style="height:900px"><img src="" id="Frame" width="600"></td>
+                </tr>
+            </table>
+    </div>
+
+    <script>
+            function ClickFunction() {
+                var x = document.getElementById("DIVbutt");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function FirstButt() {
+               
+                document.getElementById("Frame").src = "LobotmyPic.png"
+            }
+            function SecondButt() {
+               
+                document.getElementById("Frame").src = "Man.png"
+            }
+            function ThirdButt() {
+               
+                document.getElementById("Frame").src = "Pic2.png"
+            }
+    
+        </script>
+</body>
+
+</html>
